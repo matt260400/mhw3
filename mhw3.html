@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Senutia - Artisti</title>
+        <link rel="stylesheet" href="mhw3.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="contents.js" defer></script>
+        <script src="colori.js" defer></script>
+        <script src="mhw3.js" defer></script>
+    </head>
+
+    <div id="pagina">
+        <header>
+            <nav>
+                <div id="navbar">
+                    <form id="ricerca">
+                        <div id="searchbar">
+                            <input type="text" id="search" class="input" placeholder="Cerca brani, artisti...">
+                            <img src="x.png" alt="" id="cancella_testo" class="nascondi">
+                        </div>
+                        <input type="submit" id="submit" class="invio nascondi" value="Vai">
+                    </form>
+                    <a class="button" id="profile">
+                       <img src="listen.png" alt=""> 
+                    </a>
+                </div>            
+            </nav>
+
+            <nav id="nav_mobile">
+                <h1>Artisti</h1>
+                <div class="linea"></div>
+            </nav>
+        </header>
+
+        <section id="risultati_ricerca" class="nascondi">
+            
+            <div id="artista" class="">
+                <div class="linea"></div>
+                <h1 class="tipo">Artisti</h1>
+                <div class="risultati">
+                    
+                </div>
+                <div class="linea_mobile"></div>
+            </div>
+
+            <div id="album" class="">
+                <div class="linea"></div>
+                <h1 class="tipo">Album</h1>
+                <div class="risultati">
+                                       
+                </div>
+                <div class="linea_mobile"></div>
+            </div>
+
+            <div id="brano" class="">
+                <div class="linea"></div>
+                <h1 class="tipo">Brani</h1>
+                <div class="risultati">
+
+                </div>
+            </div>
+
+            <div id="info_ricerca">
+                <div>
+                    <p>Search powered by</p>
+                    <img src="Spotify_Logo_RGB_Green.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section id="lyrics">
+
+        </section>
+
+        <section id="contenuti">
+
+            <div id="preferiti" class="nascondi">
+                <div class="linea"></div>
+                <h1>Preferiti</h1>
+                <div class="artisti">
+                    
+                </div>
+                <div class="linea_mobile"></div>
+            </div>
+
+            <div id="rock" class="nascondi">
+                <div class="linea"></div>
+                <h1 class="genere">Rock</h1>
+                <div class="artisti"></div>
+                <div class="linea_mobile"></div>
+            </div>
+
+            <div id="blues" class="nascondi">
+                <div class="linea"></div>
+                <h1 class="genere">Blues</h1>
+                <div class="artisti"></div>
+                <div class="linea_mobile"></div>
+            </div>
+
+            <div id="compositori" class="nascondi">
+                <div class="linea"></div>
+                <h1 class="genere">Compositori</h1>
+                <div class="artisti"></div>
+            </div>
+            
+        </section>
+
+    </div>
+
+    <section id="sidebar">
+        <div id="tool">
+
+            <div id="logo">
+                Senutia
+            </div>
+
+            <div class="linea"></div>
+
+            <a href="./mhw1.html">
+                <img src="home.png" alt="">
+                <span hr>Home</span>
+            </a>
+
+            <a href="./mhw3.html" class="pagina_attuale">
+                <img src="artist.png" alt="">
+                <span>Artisti</span>
+            </a>
+
+            <a>
+                <img src="shop.png" alt="">
+                <span>Store</span>
+            </a>
+
+            <div class="linea_2"></div>
+
+            <div id="preferiti_sidebar" class="nascondi">
+                <h1>I tuoi artisti preferiti:</h1>
+            </div>
+
+            <div id="separazionePreferitiCronologia" class="linea nascondi"></div>
+
+            <div id="cronologia_ricerca" class="nascondi">
+
+                <h1>Le tue ricerce recenti:</h1>
+                <div id="elementi_cercati">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="bottom_bar">
+        <div id="icon_link">
+            <div><img src="home.png" alt=""></div>
+            <div><img src="artist.png" alt=""></div>
+            <div><img src="shop.png" alt=""></div>
+            <div><img src="search_white.png" alt=""></div>
+        </div>
+    </section>
+
+</html>

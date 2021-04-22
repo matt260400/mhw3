@@ -1,0 +1,517 @@
+body{
+    margin: 0px;
+    background: linear-gradient(to top, rgba(0,0,0,1) 50%, rgb(95, 28, 39) 100%);
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+}
+
+.max_height{
+    height: 100vh;
+}
+
+@media (max-width: 500px) {
+    body {
+        background: #111111;
+    }
+}
+
+#pagina{
+    margin-left: 250px;
+}
+
+@media (max-width: 500px) {
+    #pagina {
+        margin-left: 0px;
+        margin-bottom: 55px;
+    }
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+.nascondi{
+    display: none;
+}
+
+.linea{
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.6);;
+    margin-bottom: 30px;
+    margin-top: 25px;
+}
+
+
+
+.linea_2{
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.6);;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.linea_mobile{
+    display: none;
+}
+
+@media (max-width: 500px) {
+    .linea_mobile{
+        display: block;
+        width: 100%;
+        border-top: 1px solid rgba(255, 255, 255, 0.6);;
+        margin-bottom: 30px;
+        margin-top: 25px;
+    }
+}
+
+#navbar{
+    margin-top: 20px;
+    margin-right: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 500px) {
+    #navbar {
+        margin: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 500px) {
+    #navbar a{
+        display: none;
+    }
+}
+
+#nav_mobile{
+    display: none;
+}
+
+@media (max-width: 500px) {
+    #nav_mobile{
+        display: block;
+    }
+}
+
+@media (max-width: 500px) {
+    #nav_mobile h1{
+        margin-left: 25px;
+        font-size: 2em;
+    }
+}
+
+#ricerca{
+    display: flex;
+    align-items: center;
+}
+
+#searchbar{
+    display: flex;
+    align-items: center;
+}
+
+#searchbar img{
+    width: 16px;
+    position: relative;
+    right: 38px;
+}
+
+.input{
+    border: 0;
+    height: 40px;
+    width: 270px;
+    border-radius: 25px;
+    outline: 0;
+    padding-left: 15px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2em;
+    transition-duration: 300ms;
+    transition-timing-function: ease-out;
+}
+
+.invio{
+    background: none;
+    padding-left: 15px;
+    border: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.7em;
+    color: white;
+}
+
+.invio:focus{
+    outline: none;
+}
+
+#profile{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 25px 5px 25px;
+    border: 2px solid white;
+    border-radius: 100px;
+    background: linear-gradient(to right, rgb(100, 100, 100), rgb(19, 19, 19));
+}
+
+#profile img{
+    width: 20px;
+}
+
+#sidebar{
+    position: fixed;
+    padding-left: 25px;
+    padding-top: 10px;
+    background-color: #0c0c0c;
+    width: 210px;
+    height: 100%;
+    top: 0;
+}
+
+@media (max-width: 500px) {
+    #sidebar {
+      display: none;
+    }
+}
+
+#tool{
+    width: 180px;
+    margin-top: 5px;
+    font-size: 1.1em;
+    height: 90vh;
+}
+
+#tool img{
+    width: 25px;
+}
+
+#logo{
+    font-size: 2em;
+    text-align: center;
+}
+
+#tool a{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 30px;
+    margin-bottom: 15px;
+    padding: 10px;
+    transition-duration: 300ms;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+#tool a:hover{
+    cursor: pointer;
+    background-color: rgba(218, 218, 218, 0.3); 
+    text-decoration: underline;
+}
+
+#tool a.pagina_attuale{
+    background: linear-gradient(to right, rgb(36, 11, 54), rgb(195, 20, 50));
+}
+
+#tool .linea{
+    margin-top: 28px;
+}
+
+#preferiti_sidebar, #cronologia_ricerca{
+    font-size: 0.85em;
+}
+
+#preferiti_sidebar p{
+    padding-left: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#cronologia_ricerca a{
+    background: none;
+    display: block;
+    margin: 0px;
+    text-align: left;
+    padding: 0px;
+    padding-left: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#preferiti_sidebar h1, #cronologia_ricerca h1{
+    font-size: 1em;
+}
+
+#preferiti_sidebar p:hover, #cronologia_ricerca a:hover{
+    cursor: pointer;
+    text-decoration: underline;    
+}
+
+#cronologia_ricerca a:hover{
+    background: none;
+}
+
+#risultati_ricerca .card{
+    background-color: #2e2e2e;
+    border-radius: 20px;
+}
+
+#risultati_ricerca .name_ricerca{
+    padding-bottom: 4px;
+    max-width: 200px;
+    font-size: 1.1em;
+}
+
+.risultati img{
+    width: 250px;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+.descrizione_card_ricerca{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.descrizione_card_ricerca img{
+    max-width: 30px;
+    padding-bottom: 5px;
+}
+
+#contenuti, #risultati_ricerca{
+    margin-bottom: 50px;
+}
+
+@media (max-width: 500px) {
+    #risultati_ricerca{
+        margin-bottom: 90px;
+    }
+}
+
+#contenuti h1, #risultati_ricerca h1{
+    margin-top: 0px;
+    margin-left: 25px;
+    font-size: 2em;
+}
+
+@media (max-width: 500px) {
+    #contenuti h1 {
+        margin-top: 25px;
+        font-size: 2.3em;
+    }
+}
+
+#contenuti .linea, #risultati_ricerca .linea{
+    width: 98%;
+}
+
+@media (max-width: 500px) {
+    #contenuti .linea, #risultati_ricerca .linea{
+        display: none;
+    }
+}
+
+.artisti, .risultati{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    .artisti, .risultati{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.artisti img{
+    width: 300px;
+    border-radius: 10px;
+}
+
+.card{
+    margin: 20px;
+    padding: 15px;
+}
+
+.alias{
+    font-size: 1.5em;
+    font-weight: 1000;
+}
+
+.descrizione{
+    max-width: 300px;
+}
+
+.dettagli{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dettagli img{
+    width: 30px;
+}
+
+.dettagli img:hover{
+    cursor: pointer;
+}
+
+.mostra_dettagli{
+    padding: 5px 25px 5px 25px;
+    border: 2px solid white;
+    border-radius: 100px;
+    transition-duration: 400ms;
+}
+
+.mostra_dettagli:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.205);
+}
+
+#bottom_bar{
+    display: none;
+}
+
+@media (max-width: 500px) {
+    #bottom_bar{
+        display: block;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+
+    #bottom_bar img{
+        width: 30px;
+    }
+
+    #icon_link{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 15px;
+        background-color: #2e2e2e;
+    }
+
+    #icon_link img{
+        cursor: pointer;
+    }
+}
+
+#info_ricerca, #info_lyrics{
+    margin-top: 55px;
+}
+
+#info_lyrics{
+    margin-bottom: 50px;
+}
+
+@media (max-width: 500px) {
+    #info_lyrics {
+        margin-bottom: 90px;
+    }
+}
+
+#info_ricerca div, #info_lyrics div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+}
+
+@media (max-width: 500px) {
+    #info_ricerca div, #info_lyrics div {
+        justify-content: center;
+        padding: 0px;
+    }
+}
+
+#info_lyrics p{
+    font-family: 'Quicksand', sans-serif;
+}
+
+#info_ricerca img, #info_lyrics img{
+    max-width: 120px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#info_lyrics img{
+    max-width: 60px;
+}
+
+.descrizione_track{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 110px;
+}
+
+@media (max-width: 500px) {
+    .descrizione_track {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.contenitore_immagine{
+    width: 49%;
+}
+
+.descrizione_track img{
+    max-width: 400px;
+}
+
+@media (max-width: 500px) {
+    .descrizione_track img{
+        max-width: 280px;
+    }
+}
+
+.contenitore_paragrafi{
+    width: 49%;
+}
+
+.contenitore_paragrafi p{
+    font-size: 1.4em;
+}
+
+@media (max-width: 500px) {
+    .contenitore_paragrafi p{
+        font-size: 0.8em;
+    }
+}
+
+p.titolo_brano{
+    font-size: 4em;
+    font-weight: 900;
+}
+
+@media (max-width: 500px) {
+    p.titolo_brano{
+        font-size: 1.6em;
+    }
+}
+
+pre{
+    margin-top: 130px;
+    margin-bottom: 150px;
+    white-space: pre-wrap;
+}
+
+.lyrics_style{
+    font-family: 'Quicksand', sans-serif;
+    line-height: 25px;
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    .lyrics_style{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
